@@ -1,0 +1,66 @@
+.sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    height: 100%;
+}
+
+.sidebarContainer .upper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    /* padding-right: 1rem; */
+    /* padding-bottom: 30px; */
+    /* border-bottom: 2px dashed gray  ; */
+}
+
+.sidebarContainer .upper .dashboard, .Assessment, .myLibrary{
+    padding: 1rem .5rem;
+    width: 100%;    
+} 
+
+.sidebarContainer .active{
+    border: 2px solid #0E7BE7;
+    color: #0E7BE7;
+    border-radius: 10px;
+    background-color: #dbe8f5;
+    font-weight: 700;
+} 
+.sidebarContainer p{
+    font-size: .7rem;
+    color: #1C4980;
+    font-weight: 900;
+} 
+
+.sidebarContainer .lower {
+    border-top: 2px dashed rgb(214, 212, 212);
+    /* padding-top: rem; */
+    padding:  0 1.3rem;
+}
+.sidebarContainer .lower .admin{
+    border: 1px solid rgb(249, 108, 108) ;
+    border-radius: 10px;
+    padding: .1rem 0;
+    margin: 1rem 0;
+    background-color: rgb(254, 233, 233);
+}
+.admin p {
+    color:rgb(255, 67, 67);
+    font-size: .6rem;
+}
+.sidebarContainer .lower .roundStatus {
+    color: #1C4980;
+}
+.sidebarContainer .lower .roundStatus p{
+    font-size: .8rem;
+}
+
+@media (max-width: 740px){
+    .sidebarContainer{
+        display: none;    
+    }
+}

@@ -1,0 +1,17 @@
+.mainContainer {
+    margin: 0 1rem;
+}
+
+.mainContainer .heading {
+    margin: 1rem 0;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #2a5993;
+}
+
+
+@media (max-width:740px){
+    .mainContainer >.heading {
+        display: none;
+    }
+}

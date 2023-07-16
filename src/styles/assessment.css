@@ -1,0 +1,88 @@
+.submissionContainer {
+    padding: .8rem;
+    border: 1px solid rgb(222, 218, 218);
+    /* margin-right: .5rem; */
+    border-radius: 17px;
+}
+.submissionContainer .upper {
+    border-bottom: 1px dashed rgb(214, 212, 212);
+    margin-bottom: 1rem;
+}
+.submissionContainer .upper .iconsHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.submissionContainer .upper .iconsHolder .business{
+    background-color: #EBE8FD;
+    color: rgb(101,72,238);
+    padding: .6rem .8rem;
+    border-radius: 15px;
+}
+.submissionContainer .upper .iconsHolder .businesIcon ,.dots{
+    font-size: 2rem;
+}
+
+.submissionContainer .upper .contentHolder {
+    color: #1C4980;
+}
+.submissionContainer .upper .contentHolder h2{
+    font-size: 1.3rem;
+}
+.submissionContainer .upper .contentHolder p{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin: .6rem 0;
+}
+.submissionContainer .upper .contentHolder .dateSpan{
+    font-weight: 600;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin-left: .7rem;
+    color: #99afca;
+}
+.submissionContainer .upper .contentHolder .dateIcon{
+    font-size: 1rem;
+    margin-right: .3rem;
+    color: #1C4980;
+}
+.submissionContainer .lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1C4980;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.submissionContainer .lower .quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submissionContainer .lower .links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submissionContainer .lower .links button{
+    background-color: transparent;
+    outline-color: #1C4980;
+    border-radius: 20px;   
+    padding: .2rem .5rem;
+    display: flex;
+    align-items: center;
+}
+.submissionContainer .lower .links button .shareIcon{
+    font-size: 1.4rem;
+    margin-right: .4rem;
+}
+.submissionContainer .lower .links .personAvatar{
+    background-color:rgb(101,72,238);
+    padding: .3rem;
+    border-radius: 50%;
+    color: white;
+}

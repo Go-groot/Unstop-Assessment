@@ -1,0 +1,42 @@
+.inputContainer {
+    text-align: center;
+    min-width: 25rem;
+    gap: 10px;
+    height: 13.5rem;
+    padding: 1rem;
+    border: 1px dashed #DADCE0;
+    border-radius: 17px;
+    background-color: #F6F8FA;
+}
+.inputContainer .upperBody{
+    /* text-align: center; */
+
+    margin-bottom: 1rem;
+}
+.inputContainer .upperBody .plusSign {
+    border-radius: 50%;
+    padding: .5rem;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+.inputContainer .plusSign .icon{ 
+    font-size: 3rem;
+    color: #0E7BE7;
+}
+.inputContainer .lowerBody h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1C4980; 
+    margin-bottom: .5rem;       
+}
+.inputContainer .lowerBody p{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #1C4980; 
+    margin-bottom: .5rem;       
+}

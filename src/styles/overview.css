@@ -1,0 +1,220 @@
+.overviewContainer {
+    width: 100%;
+    height: 7rem;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+    border-radius: 10px;
+    border: 1px solid #DADCE0;
+
+}
+.overviewContainer .totalAsses {
+    padding: 1rem;
+    /* width: 20%; */
+    flex: 0 0 calc(20% - 20px);
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+.overviewContainer .totalAsses .icon{
+    margin-right: .7rem;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 40px;
+    color: rgb(101,72,238);
+    background-color: #EBE8FD;
+}
+.overviewContainer .totalAsses h3{
+    font-size: .8rem;
+    color: #1C4980;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.overviewContainer .totalAsses .content{
+    display: flex;
+    align-items: center;
+}
+.overviewContainer .totalAsses .content p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #1C4980;
+}
+
+.overviewContainer .candidates {
+    /* width: 33%; */
+    padding: 1rem;
+    flex: 0 0 calc(30% - 20px);    
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    margin-right: 1rem;
+}
+.overviewContainer .candidates .icon{
+    margin-right: 1rem;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 40px;
+    color: rgb(101,72,238);
+    background-color: #EBE8FD;
+}
+.overviewContainer .candidates .heading {
+    font-size: .8rem;
+    font-weight: 900;
+    color: #1C4980;
+    margin: 0;
+}
+.overviewContainer .candidates .content {
+    display: flex;    
+    color: #1C4980;
+    align-items: center;
+}
+.overviewContainer .candidates .content h3 {
+    display: flex;    
+    align-items: center;
+}
+.overviewContainer .candidates .content h3 span{
+    font-size: .8rem;
+    margin-left: .5rem;
+    color: rgb(113, 234, 86);
+}
+.overviewContainer .candidates .content .totalCandidate{
+    padding-right: 1rem;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+.overviewContainer .candidates .content .totalCandidate h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+.overviewContainer .candidates .content span{
+    font-size: .8rem;    
+    font-weight: 700;
+}
+.overviewContainer .candidates .content .whoAttampted{
+    padding: .8rem;
+}
+.overviewContainer .candidates .content .whoAttampted h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.overviewContainer .candidateSource{
+    /* width: 33%; */
+    flex: 0 0 calc(35% - 20px);    
+    padding: 1rem 0;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    margin-right: 1rem;    
+}
+.overviewContainer .candidateSource .content{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+.overviewContainer .candidateSource .content h3{
+    display: flex;
+    align-items: center;
+}
+
+.overviewContainer .candidateSource .content h3 span{
+    font-size: .8rem;
+    margin-left: .5rem;
+    color: rgb(113, 234, 86);
+}
+.overviewContainer .candidateSource .content P{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.overviewContainer .candidateSource .heading{
+    font-size: .8rem;
+    color: #1C4980; 
+    margin: 0;
+}
+.overviewContainer .candidateSource .content .icon{
+    margin-right: 1rem;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 40px;
+    color:#E9407A;
+    background-color: #FCE8EF;
+}
+.overviewContainer .candidateSource .content .emails, .overviewContainer .candidateSource .content .socialShares {
+    padding-right: 1rem;
+    height: 100%;
+    color: #1C4980;
+    border-right: 1px solid rgba(0,0,0,0.3);
+} 
+.overviewContainer .candidateSource .content .socialShares, .overviewContainer .candidateSource .content .uniqueLinks {
+    padding-left: 1rem;
+    color: #1C4980;
+} 
+.totalPurpose {
+    /* width: 14%; */
+    flex: 0 0 calc(15% - 20px);    
+    height: 100%;
+}
+.totalPurpose .content{
+    display: flex;
+    align-items: center;
+}
+.totalPurpose .content .icon{
+    margin-right: 1rem;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 40px;
+    color:#0073E6;
+    background-color: #E5F1FC;    
+}
+.totalPurpose .heading{
+    font-size: .8rem;
+    color: #1C4980;
+    margin: 0;
+}
+
+
+@media (max-width : 740px){
+    .overviewContainer{
+        display: flex;
+        margin-top: 2.8rem;
+        flex-direction: column;
+        width: 100%;
+        height: 25%;
+        position: relative;
+    }
+    .overviewContainer .candidateSource{
+        width: 100%;
+        /* flex: 0 0 calc(35% - 20px);     */
+        padding: 1rem;   
+        border-right: none;
+    }
+    .totalPurpose {
+        width: 100%;
+        /* flex: 0 0 calc(15% - 20px);    */
+        position: absolute;
+        left: 50%;
+        height: auto;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        padding-bottom: 1rem;
+        padding-left: 1rem; 
+    }
+    .overviewContainer .candidates {
+        width: 100%;
+        padding: .5rem 1rem;
+        padding-bottom: 0;
+        /* flex: 0 0 calc(30% - 20px);     */
+        height: 100%;
+        overflow: hidden;
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        /* margin-right: 1rem; */
+    }
+    .overviewContainer .totalAsses {
+        padding: 1rem;
+        /* width: 20%; */
+        flex: 0 0 calc(20% - 20px);
+        height: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+}

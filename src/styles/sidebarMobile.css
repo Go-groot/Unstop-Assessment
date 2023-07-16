@@ -1,0 +1,129 @@
+.sidebarContainers {
+    display: none;
+}
+.sidebarContainers .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+    color: #1C4980;
+}
+.sidebarContainers .upper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.sidebarContainers .upper .dashboard, .Assessment, .myLibrary{
+    padding: 1rem .5rem;
+    width: 100%;    
+} 
+
+.sidebarContainers .active{
+    border: 2px solid #0E7BE7;
+    color: #0E7BE7;
+    border-radius: 10px;
+    background-color: #dbe8f5;
+    font-weight: 700;
+} 
+.sidebarContainers p{
+    font-size: .7rem;
+    color: #1C4980;
+    font-weight: 900;
+} 
+
+.sidebarContainers .lower {
+    border-top: 2px dashed rgb(214, 212, 212);
+    /* padding-top: rem; */
+    padding:  0 1.3rem;
+}
+.sidebarContainers .lower .admin{
+    border: 1px solid rgb(249, 108, 108) ;
+    border-radius: 10px;
+    padding: .1rem 0;
+    margin: 1rem 0;
+    background-color: rgb(254, 233, 233);
+}
+.admin p {
+    color:rgb(255, 67, 67);
+    font-size: .6rem;
+}
+.sidebarContainers .lower .roundStatus {
+    color: #1C4980;
+}
+.sidebarContainers .lower .roundStatus p{
+    font-size: .8rem;
+}
+
+
+
+@keyframes roll {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .left-right {
+    /* position: fixed; */
+    left: 0px;
+    /* height: 100vh; */
+    animation: roll .7s ease-out forwards;
+  }
+
+
+
+
+@media (max-width: 740px){
+    .sidebarContainers {        
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;       
+        position: absolute;
+        align-items: flex-start;
+        text-align: center;
+        padding: 3rem 2rem;
+        width: 80%;
+        height: 100%;
+        background-color: #e8f4ff;
+        box-shadow: 110px 0px 181px rgba(181, 181, 181, 0.7);        
+    }
+    .sidebarContainers .upper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 100%;
+    }
+    .sidebarContainers .lower {
+        border-top: 2px dashed rgb(214, 212, 212);
+        /* padding-top: rem; */
+        padding:  0 1.3rem;
+        display: flex;
+        width: 100%;
+        padding-top: 2%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .sidebarContainers .upper .dashboard, .Assessment, .myLibrary{
+        padding: 1rem .5rem;
+        width: 100%;    
+        display: flex;
+    } 
+    .icons {
+        margin-right: 1rem;
+    }
+    .sidebarContainers .lower .roundStatus {
+        display: flex;
+        gap: 10px;
+    }
+    .sidebarContainers .lower .admin{
+        padding: .1rem .6rem;
+    }
+}
