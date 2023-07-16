@@ -2,6 +2,8 @@ import React from 'react'
 import {BiMenuAltLeft} from 'react-icons/bi';
 import '../styles/header2.css';
 
+// Component for Mobile Screens only 
+
 const Header2 = ({click}) => {
   return (
     <div className='headerContainer'>

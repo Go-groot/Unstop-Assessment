@@ -1,8 +1,11 @@
 import React from 'react'
 import {MdAdd} from 'react-icons/md'
 
+// Component to activate model and add more new assessments 
+
 const NewInput = ({openModal}) => {
   return (
+    // recieving the PROPS from the APP Component to trigger the model activation 
     <div onClick={openModal} className='inputContainer' >
       <div className="upperBody">
         <div className="plusSign">

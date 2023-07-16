@@ -5,6 +5,8 @@ import {BsQuestionSquare} from 'react-icons/bs'
 import '../styles/sidebarMobile.css';
 import {AiOutlineClose} from 'react-icons/ai';
 
+// Component to be displayed on mobile screens only
+
 const SidebarMobile = ({click}) => {
   return (
     <div className='sidebarContainers left-right'>

@@ -7,6 +7,7 @@ import '../styles/sidebar.css';
 const Sidebar = () => {
   return (
     <div className='sidebarContainer'>
+      {/* Upper Interactive section for the sidebar */}
       <div className="upper">
         <div className="dashboard">
           <CiGrid42 />
@@ -21,6 +22,7 @@ const Sidebar = () => {
           <p>My Library</p>
         </div>
       </div>
+      {/* Lower section for Round Status */}
       <div className="lower">
         <div className="admin">
             <p>Admin</p>

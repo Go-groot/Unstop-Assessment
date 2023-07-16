@@ -1,4 +1,7 @@
 import React from 'react'
+
+// react-icons for all Icons used in the project;
+
 import {TbLayoutList} from 'react-icons/tb'
 import {MdOutlinePeopleAlt} from 'react-icons/md';
 import { SlGlobe } from 'react-icons/sl';
@@ -7,6 +10,7 @@ import {IoMdLink} from 'react-icons/io';
 const Overview = () => {
   return (
     <div className='overviewContainer'>
+        {/* Total Assessment Section */}
         <div className="totalAsses">
             <h3>Total Assessment</h3>
             <div className="content">
@@ -14,6 +18,8 @@ const Overview = () => {
             <p>34</p>
             </div>
         </div>
+
+        {/* Candidates Section */}
         <div className="candidates">
             <div className="heading">
                 <h3>Candidates</h3>
@@ -30,6 +36,8 @@ const Overview = () => {
                 </div>
             </div>
         </div>
+
+        {/* Candidate Sources Section*/}
         <div className="candidateSource">
             <div className="heading">
                 <h3>Candidate Source</h3>
@@ -50,6 +58,8 @@ const Overview = () => {
                 </div>
             </div>
         </div>
+
+        {/* Total Purpose Section */}
         <div className="totalPurpose">
             <div className="heading">
                 <h3>Total Purpose</h3>

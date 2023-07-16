@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/navbar2.css';
 
+// Compoennt to be displayed only on mobile Screens;
+
 const Navbar2 = () => {
   return (
     <div className='nav2'>

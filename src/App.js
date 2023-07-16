@@ -13,22 +13,30 @@ import Header2 from "./components/Header2";
 import SidebarMobile from "./components/SidebarMobile";
 
 function App() {
+  // managing state to check for model activation  
   const [model , setModel] = useState(false);
-  const [sidebar , setSidebar] = useState(false);
-  // const [overview , setOverview] = useState(true);
 
+  //managing state to check the sidebar activation 
+  const [sidebar , setSidebar] = useState(false);  
+
+  //function to handle the click event for the model
   const modelClick = () =>{
     setModel(!model)
   }
+
+  //function to handle the click event for sidebar
   const sidebarClick = () =>{
     setSidebar(!sidebar)
   }
 
   return (
-    <>    
+    <>{/* conditionaly displaying form model based on the user interaction */}    
       {model && <Model className='model' setModel={modelClick}/>}
+
+      {/* conditionaly displaying sidebar for mobile based on the user screen resulotion and interaction */}
       {sidebar && <SidebarMobile click={sidebarClick} className='mobileSidebar'/>}
-      {/* {overview && <Overview />}   */}
+
+     {/* Main App component to render the content  */}
       <div className="App">
         <div className='leftPanel'>
           <Sidebar />  

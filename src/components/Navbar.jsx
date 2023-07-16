@@ -12,5 +12,5 @@ const Navbar = () => {
     </div>
   )
 }
-
+// exporting the component
 export default Navbar
